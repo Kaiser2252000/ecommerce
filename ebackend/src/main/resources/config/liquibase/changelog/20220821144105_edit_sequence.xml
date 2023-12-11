@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.12.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="mac (generated)" id="1661092997389-2">
+        <createSequence incrementBy="1" sequenceName="bill_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="mac (generated)" id="1661092997389-3">
+        <createSequence incrementBy="1" sequenceName="category_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="mac (generated)" id="1661092997389-4">
+        <createSequence incrementBy="1" sequenceName="line_item_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="mac (generated)" id="1661092997389-5">
+        <createSequence incrementBy="1" sequenceName="orders_seq" startValue="1"/>
+    </changeSet>
+    <changeSet author="mac (generated)" id="1661092997389-6">
+        <createSequence incrementBy="1" sequenceName="product_seq" startValue="1"/>
+    </changeSet>
+
+</databaseChangeLog>

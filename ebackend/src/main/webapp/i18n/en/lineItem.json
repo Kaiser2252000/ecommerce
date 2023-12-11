@@ -1,0 +1,28 @@
+{
+  "ecomApp": {
+    "lineItem": {
+      "home": {
+        "title": "Line Items",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Line Item",
+        "createOrEditLabel": "Create or edit a Line Item",
+        "notFound": "No Line Items found"
+      },
+      "created": "A new Line Item is created with identifier {{ param }}",
+      "updated": "A Line Item is updated with identifier {{ param }}",
+      "deleted": "A Line Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Line Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Line Item"
+      },
+      "id": "Id",
+      "productId": "Product Id",
+      "orderId": "Order Id",
+      "price": "Price",
+      "quantity": "Quantity",
+      "discount": "Discount"
+    }
+  }
+}

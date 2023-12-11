@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+    <property name="floatType" value="float4" dbms="postgresql"/>
+    <property name="clobType" value="longvarchar" dbms="postgresql"/>
+    <property name="blobType" value="bytea" dbms="postgresql"/>
+    <property name="uuidType" value="uuid" dbms="postgresql"/>
+    <property name="datetimeType" value="datetime" dbms="postgresql"/>
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821140710_added_entity_Category.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821140711_added_entity_Product.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821140712_added_entity_LineItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821140713_added_entity_Orders.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821140714_added_entity_Bill.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220821144105_edit_sequence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220905085612_add_column_status_Category.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220909103512_add_column_description_Product.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221108213140_add_column_phone_User.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20221109100522_drop_column_status_User.xml" relativeToChangelogFile="false" />
+    <include file="config/liquibase/changelog/20221207100522_add_entity_Cart.xml" relativeToChangelogFile="false" />
+    <include file="config/liquibase/changelog/20221207171322_add_entity_CartLineItem.xml" relativeToChangelogFile="false" />
+    <include file="config/liquibase/changelog/20231101171239_add_column_phone_address_name_entity_Orders.xml" relativeToChangelogFile="false" />
+
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+    <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
+</databaseChangeLog>

@@ -1,0 +1,62 @@
+entity Category {
+	id Long
+    name String maxlength(255) required
+    parentId Long
+}
+
+entity Product {
+	id Long
+    name String maxlength(200) required
+    price Double
+    quantity Integer
+    categoryId Long
+    brand String maxlength(200)
+    imageUrl String
+    status Boolean
+    discount Integer
+    discountStartDate LocalDate
+    discountEndDate LocalDate
+}
+
+entity LineItem {
+	id Long
+    productId Long required
+    orderId Long required
+    price Double
+    quantity Integer
+    discount Integer
+}
+
+entity Orders {
+	id Long
+    userId Long
+    orderDate LocalDate
+    shipPrice Double
+    status String
+    shipperName String
+    shipperPhone String
+}
+
+entity Bill {
+	id Long
+    orderId Long required
+    userId Long
+    customerId Long
+    totalPrice Double
+    vat Double
+    paymentDate LocalDate
+    status String
+}
+
+
+// Set pagination options
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
